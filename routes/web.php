@@ -27,6 +27,10 @@ Route::get('/library', function () {
     return view('library');
 });
 
+Route::get('/artikel', function () {
+    return view('artikel');
+});
+
 Route::get('/riwayatbaca', function () {
     return view('riwayatbaca');
 });
