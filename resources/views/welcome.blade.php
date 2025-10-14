@@ -62,9 +62,11 @@
 
     <!-- Baris pertama -->
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mb-6">
-  @foreach (['Terjemahkan', 'Buku Komunitas', 'Buku Resmi'] as $item)
-    <div class="bg-transparent rounded-2xl border border-black p-5 flex flex-col justify-center hover:shadow-md transition h-40">
-      <h3 class="text-base font-semibold text-[#000000] mb-2">{{ $item }}</h3>
+
+  <!-- Terjemahkan -->
+  <a href="/terjemahkan" class="block">
+    <div class="bg-transparent rounded-2xl border border-black p-5 flex flex-col justify-center hover:shadow-md transition h-40 cursor-pointer">
+      <h3 class="text-base font-semibold text-[#000000] mb-2">Terjemahkan</h3>
       <div class="flex items-center gap-2">
         <img src="{{ asset('images/avatar.png') }}" alt="icon" class="w-9 h-9 rounded-full">
         <div>
@@ -73,15 +75,46 @@
         </div>
       </div>
     </div>
-  @endforeach
+  </a>
+
+  <!-- Buku Komunitas -->
+  <a href="/komunitas" class="block">
+    <div class="bg-transparent rounded-2xl border border-black p-5 flex flex-col justify-center hover:shadow-md transition h-40 cursor-pointer">
+      <h3 class="text-base font-semibold text-[#000000] mb-2">Buku Komunitas</h3>
+      <div class="flex items-center gap-2">
+        <img src="{{ asset('images/avatar.png') }}" alt="icon" class="w-9 h-9 rounded-full">
+        <div>
+          <p class="font-medium text-gray-800 text-xs">Title</p>
+          <p class="text-gray-500 text-[11px]">Description</p>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <!-- Buku Resmi -->
+  <a href="/resmi" class="block">
+    <div class="bg-transparent rounded-2xl border border-black p-5 flex flex-col justify-center hover:shadow-md transition h-40 cursor-pointer">
+      <h3 class="text-base font-semibold text-[#000000] mb-2">Buku Resmi</h3>
+      <div class="flex items-center gap-2">
+        <img src="{{ asset('images/avatar.png') }}" alt="icon" class="w-9 h-9 rounded-full">
+        <div>
+          <p class="font-medium text-gray-800 text-xs">Title</p>
+          <p class="text-gray-500 text-[11px]">Description</p>
+        </div>
+      </div>
+    </div>
+  </a>
+
 </div>
 
 
 <!-- Baris kedua (dua kotak lebih panjang) -->
 <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-  @foreach (['Audiobook', 'Artikel'] as $item)
-    <div class="bg-transparent rounded-2xl border border-black p-6 flex flex-col justify-center hover:shadow-md transition h-40">
-      <h3 class="text-base font-semibold text-[#000000] mb-2">{{ $item }}</h3>
+
+  <!-- Audiobook -->
+  <a href="/audiobook" class="block">
+    <div class="bg-transparent rounded-2xl border border-black p-6 flex flex-col justify-center hover:shadow-md transition h-40 cursor-pointer">
+      <h3 class="text-base font-semibold text-[#000000] mb-2">Audiobook</h3>
       <div class="flex items-center gap-2">
         <img src="{{ asset('images/avatar.png') }}" alt="icon" class="w-9 h-9 rounded-full">
         <div>
@@ -90,8 +123,24 @@
         </div>
       </div>
     </div>
-  @endforeach
+  </a>
+
+  <!-- Artikel -->
+  <a href="/artikel" class="block">
+    <div class="bg-transparent rounded-2xl border border-black p-6 flex flex-col justify-center hover:shadow-md transition h-40 cursor-pointer">
+      <h3 class="text-base font-semibold text-[#000000] mb-2">Artikel</h3>
+      <div class="flex items-center gap-2">
+        <img src="{{ asset('images/avatar.png') }}" alt="icon" class="w-9 h-9 rounded-full">
+        <div>
+          <p class="font-medium text-gray-800 text-xs">Title</p>
+          <p class="text-gray-500 text-[11px]">Description</p>
+        </div>
+      </div>
+    </div>
+  </a>
+
 </div>
+
 
 
   <script>

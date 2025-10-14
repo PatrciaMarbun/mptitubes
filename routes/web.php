@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
 
@@ -65,4 +65,36 @@ Route::get('/riwayatbaca', function () {
 
 Route::get('/riwayatunduh', function () {
     return view('riwayatunduh');
+});
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/editprofile', function () {
+    return view('editprofile');
+});
+
+Route::get('/register', function () {
+    return view('register');
+});
+
+Route::get('/forgotpassword', function () {
+    return view('forgotpassword');
+});
+
+Route::get('/verifikasicode', function () {
+    return view('verifikasicode');
+});
+
+Route::get('/confirmcode', function () {
+    return view('confirmcode');
+});
+
+Route::get('/resetpassword', function () {
+    return view('resetpassword');
+});
+
+Route::get('/berhasilpw', function () {
+    return view('berhasilpw');
 });
