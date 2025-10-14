@@ -71,7 +71,9 @@
         <button class="w-full bg-white rounded-lg py-3 text-black font-medium hover:bg-gray-100 transition">Login</button>
         <a href="/library" class="w-full bg-white rounded-lg py-3 text-black font-medium hover:bg-gray-100 transition text-center block">Library</a>
         <a href="/riwayatbaca" class="w-full bg-white rounded-lg py-3 text-black font-medium hover:bg-gray-100 transition text-center block">Riwayat Baca</a>
-        <a href="/riwayatunduh" class="w-full bg-white rounded-lg py-3 text-black font-medium hover:bg-gray-100 transition text-center block">Riwayat Unduh</a>
+        <a href="#" class="w-full bg-white rounded-lg py-3 text-black font-medium hover:bg-gray-100 transition text-center block">Riwayat Unduh</a>
+        <button class="w-full bg-white rounded-lg py-3 text-red-500 font-medium hover:bg-gray-100 transition">LogOut</button>
+
       </div>
 
     </div>
