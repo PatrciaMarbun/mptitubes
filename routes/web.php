@@ -2,17 +2,16 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/welcome', function () {
+Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home', function () {
+    return view('home');
+});
 
 Route::get('/terjemahkan', function () {
     return view('terjemahkan');
-});
-
-Route::get('/konversiterjemahkan', function () {
-    return view('konversiterjemahkan');
 });
 
 Route::get('/komunitas', function () {

@@ -20,11 +20,8 @@
 <body class="bg-[#05284C] min-h-screen flex flex-col items-center justify-center">
 
   <div class="bg-[#F1EFEC] rounded-[2rem] shadow-xl w-[90%] max-w-[40rem] p-10 text-center">
-    
-    <!-- Checklist Icon -->
     <div class="flex justify-center mb-6">
       <div class="bg-green-500 w-24 h-24 rounded-full flex items-center justify-center">
-        <!-- Icon centang -->
         <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
         </svg>

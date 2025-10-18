@@ -20,7 +20,7 @@
       <img src="{{ asset('images/logo.png') }}" alt="Braille Logo" class="h-10 w-auto">
     </a>
     <div class="flex items-center gap-12 text-gray-800">
-      <a href="/terjemahkan" class="flex items-center gap-2 hover:text-[#05284C]">
+      <a href="/terjemahkan" class="flex items-center gap-2 bg-[#D4C9BE] px-5 py-2 rounded-full hover:text-[#05284C]">
         <i data-lucide="arrow-left-right" class="w-5 h-5"></i>Terjemahkan
       </a>
       <a href="/komunitas" class="flex items-center gap-2 hover:text-[#05284C]">

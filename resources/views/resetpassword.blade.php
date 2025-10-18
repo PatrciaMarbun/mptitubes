@@ -4,45 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reset Password Braille</title>
-
-  <!-- Font Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Tailwind CSS -->
   @vite('resources/css/app.css')
-
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-    .error-text {
-      color: #dc2626;
-      font-size: 0.875rem;
-      margin-top: 0.25rem;
-      display: none;
-    }
-    .input-error {
-      border-color: #dc2626;
-    }
+    body { font-family: 'Inter', sans-serif; }
+    .error-text { color: #dc2626; font-size: 0.875rem; margin-top: 0.25rem; display: none; }
+    .input-error { border-color: #dc2626; }
   </style>
 </head>
 <body class="bg-[#05284C] min-h-screen flex flex-col">
 
-  <!-- NAVBAR -->
-  <nav class="bg-[#F1EFEC] w-full fixed top-0 left-0 z-50 shadow-sm py-5 flex justify-center items-center">
-    <h1 class="text-2xl font-semibold text-[#05284C]">Braille Logo</h1>
+  <nav class="bg-[#F1EFEC] w-full fixed top-0 left-0 z-50 shadow-sm py-4 flex justify-center items-center">
+    <img src="images/logo.png" alt="Braille Logo" class="h-10 md:h-12">
   </nav>
 
-  <!-- HERO / RESET PASSWORD SECTION -->
   <section class="flex flex-col items-center justify-center w-full flex-grow pt-[100px] pb-[150px] bg-[#05284C]">
     <div class="bg-[#F1EFEC] rounded-[2rem] shadow-xl w-[95%] max-w-[60rem] px-16 py-10 text-center">
+      
       <h2 class="text-3xl font-bold mb-2">Reset Password</h2>
-      <p class="text-gray-700 mb-6">
-        Create a new password. Ensure it differs from previous ones for security
-      </p>
+      <p class="text-gray-700 mb-6">Create a new password. Ensure it differs from previous ones for security</p>
 
       <form id="resetForm" class="space-y-5 text-left">
-        <!-- New Password -->
+
         <div>
           <label for="new_password" class="block text-gray-800 mb-1">New Password</label>
           <div class="relative">
@@ -56,7 +39,6 @@
           <p id="newPasswordError" class="error-text">Password wajib diisi</p>
         </div>
 
-        <!-- Confirm Password -->
         <div>
           <label for="confirm_password" class="block text-gray-800 mb-1">Confirm Password</label>
           <div class="relative">
@@ -70,21 +52,19 @@
           <p id="confirmPasswordError" class="error-text">Konfirmasi password wajib diisi</p>
         </div>
 
-        <!-- Reset Button -->
         <button type="submit" class="w-full bg-black text-white rounded-xl py-2 mt-3 hover:bg-gray-800 transition">
           Reset Password
         </button>
+
       </form>
+
     </div>
   </section>
 
   <script>
-    // Ambil elemen
     const form = document.querySelector('#resetForm');
     const newPassword = document.querySelector('#new_password');
     const confirmPassword = document.querySelector('#confirm_password');
-
-    // Toggle visibility password
     const toggleNew = document.querySelector('#toggleNewPassword');
     const toggleConfirm = document.querySelector('#toggleConfirmPassword');
 
@@ -100,18 +80,15 @@
       toggleConfirm.classList.toggle('text-blue-500');
     });
 
-    // Validasi wajib isi
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       let valid = true;
 
-      // Reset error
       document.getElementById('newPasswordError').style.display = 'none';
       document.getElementById('confirmPasswordError').style.display = 'none';
       newPassword.classList.remove('input-error');
       confirmPassword.classList.remove('input-error');
 
-      // Validasi
       if (!newPassword.value) {
         document.getElementById('newPasswordError').style.display = 'block';
         newPassword.classList.add('input-error');
@@ -124,7 +101,6 @@
         valid = false;
       }
 
-      // Jika valid, arahkan ke halaman berhasil
       if (valid) {
         window.location.href = '/berhasilpw';
       }
