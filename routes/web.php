@@ -14,23 +14,23 @@ Route::get('/terjemahkan', function () {
     return view('terjemahkan');
 });
 
-Route::get('/komunitas', function () {
-    return view('komunitas');
+Route::get('/bukukomunitas', function () {
+    return view('bukukomunitas');
 });
 
-Route::get('/komunitasdetail', function () {
+Route::get('/bukukomunitas/detail', function () {
     return view('komunitasdetail');
 });
 
-Route::get('/komunitasbaca', function () {
+Route::get('/bukukomunitas/detail/baca', function () {
     return view('komunitasbaca');
 });
 
-Route::get('/resmi', function () {
-    return view('resmi');
+Route::get('/bukuresmi', function () {
+    return view('bukuresmi');
 });
 
-Route::get('/bukuresmidetail', function () {
+Route::get('/bukuresmi/detail', function () {
     return view('bukuresmidetail');
 });
 
@@ -38,11 +38,11 @@ Route::get('/audiobook', function () {
     return view('audiobook');
 });
 
-Route::get('/audiobookdetail', function () {
+Route::get('/audiobook/detail', function () {
     return view('audiobookdetail');
 });
 
-Route::get('/audiobookdengar', function () {
+Route::get('/audiobook/detail/dengar', function () {
     return view('audiobookdengar');
 });
 
@@ -50,13 +50,6 @@ Route::get('/artikel', function () {
     return view('artikel');
 });
 
-Route::get('/profile', function () {
-    return view('profile');
-});
-
-Route::get('/library', function () {
-    return view('library');
-});
 
 Route::get('/riwayatbaca', function () {
     return view('riwayatbaca');
@@ -78,22 +71,39 @@ Route::get('/register', function () {
     return view('register');
 });
 
-Route::get('/forgotpassword', function () {
+Route::get('/bagikankarya', function () {
+    return view('bagikankarya');
+});
+
+Route::get('/bagikankarya/tuliskarya', function () {
+    return view('tuliskarya');
+});
+
+Route::get('/bagikankarya/tuliskarya/tuliskaryanew', function () {
+    return view('tuliskaryanew');
+});
+
+Route::get('/bagikankarya/uploadkarya', function () {
+    return view('uploadkarya');
+});
+
+
+Route::get('/login/forgotpassword', function () {
     return view('forgotpassword');
 });
 
-Route::get('/verifikasicode', function () {
+Route::get('/login/forgotpassword/verifikasicode', function () {
     return view('verifikasicode');
 });
 
-Route::get('/confirmcode', function () {
+Route::get('/login/forgotpassword/verifikasicode/confirmcode', function () {
     return view('confirmcode');
 });
 
-Route::get('/resetpassword', function () {
+Route::get('/login/forgotpassword/verifikasicode/confirmcode/resetpassword', function () {
     return view('resetpassword');
 });
 
-Route::get('/berhasilpw', function () {
+Route::get('/login/forgotpassword/verifikasicode/confirmcode/resetpassword/berhasilpw', function () {
     return view('berhasilpw');
 });

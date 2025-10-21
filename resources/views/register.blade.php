@@ -18,7 +18,7 @@ body { font-family: 'Inter', sans-serif; }
 <img src="{{ asset('images/logo.png') }}" alt="Logo" class="h-10">
 </nav>
 
-<section class="flex flex-col items-center justify-center w-full flex-grow pt-[100px] pb-[150px] bg-[#05284C]">
+<section id="register" class="flex justify-center items-start px-6 md:px-10 pt-[120px] pb-20">
 <div class="bg-[#F1EFEC] rounded-[2rem] shadow-xl w-[90%] max-w-[60rem] p-10 text-center">
 <h2 class="text-3xl font-bold mb-2">Register</h2>
 <form id="registerForm" class="space-y-5 text-left">

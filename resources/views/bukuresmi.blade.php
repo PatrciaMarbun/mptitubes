@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Riwayat Baca</title>
+  <title>Buku Komunitas</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   @vite('resources/css/app.css')
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -45,7 +45,7 @@
         <a href="/bukukomunitas" class="flex items-center gap-2 hover:text-[#05284C]">
           <i data-lucide="book-text" class="w-5 h-5"></i>Buku Komunitas
         </a>
-        <a href="/bukuresmi" class="flex items-center gap-2 hover:text-[#05284C]">
+        <a href="/bukuresmi" class="flex items-center gap-2 bg-[#D4C9BE] px-5 py-2 rounded-full hover:text-[#05284C]">
           <i data-lucide="book-open" class="w-5 h-5"></i>Buku Resmi
         </a>
         <a href="/audiobook" class="flex items-center gap-2 hover:text-[#05284C]">
@@ -100,11 +100,11 @@
     </div>
   </nav>
 
-  <!-- Section Buku Komunitas -->
-  <section id="riwayatbaca" class="flex justify-center items-start px-6 md:px-10 pt-[120px] pb-20">
+  <!-- Section Buku Resmi -->
+  <section id="bukuresmi" class="flex justify-center items-start px-6 md:px-10 pt-[120px] pb-20">
     <div class="bg-[#F1EFEC] rounded-[40px] w-full max-w-7xl p-8 md:p-16 shadow-lg">
       <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 md:mb-0">Riwayat Baca</h2>
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 md:mb-0">Buku Resmi</h2>
         <div class="flex items-center bg-white rounded-full px-3 py-1 shadow-sm w-full md:w-64">
           <i data-lucide="search" class="w-5 h-5 text-gray-400 mr-2"></i>
           <input type="text" placeholder="Cari buku..." class="w-full text-sm text-gray-700 outline-none bg-transparent">
@@ -114,7 +114,7 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
   <!-- Card A -->
   <div class="bg-white rounded-2xl shadow p-4 flex flex-col hover:shadow-lg transition cursor-pointer">
-    <a href="/bukukomunitas/detail" class="block">
+    <a href="/bukuresmi/detail" class="block">
       <div class="flex justify-between items-start mb-4">
         <div class="flex items-center gap-3">
           <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-semibold">A</div>
@@ -142,7 +142,7 @@
 
   <!-- Card B -->
   <div class="bg-white rounded-2xl shadow p-4 flex flex-col hover:shadow-lg transition cursor-pointer">
-    <a href="/bukukomunitas/detail" class="block">
+    <a href="/bukuresmi/detail" class="block">
       <div class="flex justify-between items-start mb-4">
         <div class="flex items-center gap-3">
           <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-semibold">B</div>
@@ -170,7 +170,7 @@
 
   <!-- Card C -->
   <div class="bg-white rounded-2xl shadow p-4 flex flex-col hover:shadow-lg transition cursor-pointer">
-    <a href="/bukukomunitas/detail" class="block">
+    <a href="/bukuresmi/detail" class="block">
       <div class="flex justify-between items-start mb-4">
         <div class="flex items-center gap-3">
           <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-semibold">C</div>
@@ -206,7 +206,7 @@
     <a href="/bukukomunitas" class="flex flex-col items-center text-gray-800 hover:text-[#05284C] px-4 py-2 rounded-md">
       <i data-lucide="book-text" class="w-6 h-6"></i><span class="text-xs mt-1">Buku Komunitas</span>
     </a>
-    <a href="/bukuresmi" class="flex flex-col items-center text-gray-800 hover:text-[#05284C] px-4 py-2 rounded-md">
+    <a href="/bukuresmi" class="flex flex-col items-center text-gray-800 hover:text-[#05284C] px-4 py-2 rounded-md bg-[#D4C9BE]">
       <i data-lucide="book-open" class="w-6 h-6"></i><span class="text-xs mt-1">Buku Resmi</span>
     </a>
     <a href="/audiobook" class="flex flex-col items-center text-gray-800 hover:text-[#05284C] px-4 py-2 rounded-md">

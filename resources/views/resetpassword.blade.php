@@ -4,25 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reset Password Braille</title>
+
+  <!-- Font Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
   @vite('resources/css/app.css')
+
   <style>
     body { font-family: 'Inter', sans-serif; }
     .error-text { color: #dc2626; font-size: 0.875rem; margin-top: 0.25rem; display: none; }
     .input-error { border-color: #dc2626; }
   </style>
 </head>
-<body class="bg-[#05284C] min-h-screen flex flex-col">
+<body class="bg-[#05284C] min-h-screen flex flex-col items-center">
 
+  <!-- NAVBAR -->
   <nav class="bg-[#F1EFEC] w-full fixed top-0 left-0 z-50 shadow-sm py-4 flex justify-center items-center">
-    <img src="images/logo.png" alt="Braille Logo" class="h-10 md:h-12">
+    <img src="{{ asset('images/logo.png') }}" alt="Braille Logo" class="h-10 md:h-12 w-auto object-contain">
   </nav>
 
-  <section class="flex flex-col items-center justify-center w-full flex-grow pt-[100px] pb-[150px] bg-[#05284C]">
+  <!-- RESET PASSWORD SECTION -->
+  <section id="resetpassword" class="flex justify-center items-start w-full px-6 md:px-10 pt-[120px] pb-20">
     <div class="bg-[#F1EFEC] rounded-[2rem] shadow-xl w-[95%] max-w-[60rem] px-16 py-10 text-center">
-      
+
       <h2 class="text-3xl font-bold mb-2">Reset Password</h2>
-      <p class="text-gray-700 mb-6">Create a new password. Ensure it differs from previous ones for security</p>
+      <p class="text-gray-700 mb-6">Create a new password. Ensure it differs from previous ones for security.</p>
 
       <form id="resetForm" class="space-y-5 text-left">
 
@@ -52,7 +59,7 @@
           <p id="confirmPasswordError" class="error-text">Konfirmasi password wajib diisi</p>
         </div>
 
-        <button type="submit" class="w-full bg-black text-white rounded-xl py-2 mt-3 hover:bg-gray-800 transition">
+        <button type="submit" class="w-full bg-black text-white rounded-xl py-2 mt-3 hover:bg-gray-800 transition font-medium">
           Reset Password
         </button>
 
@@ -102,7 +109,7 @@
       }
 
       if (valid) {
-        window.location.href = '/berhasilpw';
+        window.location.href = '/login/forgotpassword/verifikasicode/confirmcode/resetpassword/berhasilpw';
       }
     });
   </script>

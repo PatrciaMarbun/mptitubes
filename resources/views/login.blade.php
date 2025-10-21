@@ -18,7 +18,7 @@ body { font-family: 'Inter', sans-serif; }
 <img src="images/logo.png" alt="Braille Logo" class="h-10 md:h-12">
 </nav>
 
-<section class="flex flex-col items-center justify-center w-full flex-grow pt-[100px] pb-[150px] bg-[#05284C]">
+<section id="login" class="flex justify-center items-start px-6 md:px-10 pt-[120px] pb-20">
 <div class="bg-[#F1EFEC] rounded-[2rem] shadow-xl w-[95%] max-w-[70rem] px-16 py-12 text-center">
 <h2 class="text-3xl md:text-4xl font-bold mb-3">Login</h2>
 <p class="text-gray-700 mb-6 text-base md:text-lg">Please login to your account</p>
@@ -46,7 +46,7 @@ body { font-family: 'Inter', sans-serif; }
 <label class="flex items-center gap-2">
 <input type="checkbox" class="h-4 w-4 border-gray-300 rounded"> Remember me
 </label>
-<a href="/forgotpassword" class="text-blue-600 hover:underline">Forgot password?</a>
+<a href="/login/forgotpassword" class="text-blue-600 hover:underline">Forgot password?</a>
 </div>
 
 <button type="submit" class="w-full bg-black text-white rounded-xl py-2 mt-3 hover:bg-gray-800 transition">Login</button>

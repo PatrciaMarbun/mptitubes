@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Riwayat Baca</title>
+  <title>Buku Komunitas</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   @vite('resources/css/app.css')
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -42,7 +42,7 @@
         <i data-lucide="arrow-left-right" class="w-5 h-5"></i>Terjemahkan
       </a>
       <div class="flex flex-1 justify-evenly items-center whitespace-nowrap">
-        <a href="/bukukomunitas" class="flex items-center gap-2 hover:text-[#05284C]">
+        <a href="/bukukomunitas" class="flex items-center gap-2 bg-[#D4C9BE] px-5 py-2 rounded-full hover:text-[#05284C]">
           <i data-lucide="book-text" class="w-5 h-5"></i>Buku Komunitas
         </a>
         <a href="/bukuresmi" class="flex items-center gap-2 hover:text-[#05284C]">
@@ -101,10 +101,10 @@
   </nav>
 
   <!-- Section Buku Komunitas -->
-  <section id="riwayatbaca" class="flex justify-center items-start px-6 md:px-10 pt-[120px] pb-20">
+  <section id="bukukomunitas" class="flex justify-center items-start px-6 md:px-10 pt-[120px] pb-20">
     <div class="bg-[#F1EFEC] rounded-[40px] w-full max-w-7xl p-8 md:p-16 shadow-lg">
       <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 md:mb-0">Riwayat Baca</h2>
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 md:mb-0">Buku Komunitas</h2>
         <div class="flex items-center bg-white rounded-full px-3 py-1 shadow-sm w-full md:w-64">
           <i data-lucide="search" class="w-5 h-5 text-gray-400 mr-2"></i>
           <input type="text" placeholder="Cari buku..." class="w-full text-sm text-gray-700 outline-none bg-transparent">
@@ -203,7 +203,7 @@
     <a href="/terjemahkan" class="flex flex-col items-center text-gray-800 hover:text-[#05284C] px-4 py-2 rounded-md">
       <i data-lucide="arrow-left-right" class="w-6 h-6"></i><span class="text-xs mt-1">Terjemahkan</span>
     </a>
-    <a href="/bukukomunitas" class="flex flex-col items-center text-gray-800 hover:text-[#05284C] px-4 py-2 rounded-md">
+    <a href="/bukukomunitas" class="flex flex-col items-center text-gray-800 hover:text-[#05284C] px-4 py-2 rounded-md bg-[#D4C9BE]">
       <i data-lucide="book-text" class="w-6 h-6"></i><span class="text-xs mt-1">Buku Komunitas</span>
     </a>
     <a href="/bukuresmi" class="flex flex-col items-center text-gray-800 hover:text-[#05284C] px-4 py-2 rounded-md">
